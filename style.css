@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 620px;
+  margin: auto;
+}
+
+.col-1 {
+  flex-basis: 50%;
+  background-color: #2bb4b1;
+  border-radius: 0 0 0 7px;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  background-color: #49bebd;
+  border-radius: 0 0 7px 0;
+}
+
+.card-top {
+  background-color: #fff;
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  border-radius: 7px 7px 0 0;
+}
+
+.blue {
+  color: hsl(217, 98%, 68%);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.yellow {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pale {
+  color: hsl(218, 22%, 67%);
+  line-height: 28px;
+}
+
+.row {
+  display: flex;
+}
+
+h4 {
+  color: #fffffff8;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+.price {
+  display: flex;
+  margin-left: 35px;
+  align-items: center;
+}
+
+.price p {
+  margin-top: 15px;
+  font-size: 30px;
+  color: #fffffff8;
+  align-items: center;
+}
+
+span {
+  color: gray;
+  margin-left: 11px;
+}
+
+.wrapper {
+  margin-top: 5px;
+  margin-left: 35px;
+  color: #fffffff8;
+}
+
+button {
+  display: inline-block;
+  margin-left: 35px;
+  color: #fffffff8;
+  text-align: center;
+  margin-top: 26px;
+
+  border-radius: 6px;
+  padding: 15px 95px 15px 95px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  transition: 0.5s all ease;
+}
+
+button:hover {
+  color: hsl(71, 73%, 54%);
+  background-color: hsl(71, 100%, 87%);
+}
+
+h5 {
+  color: #fffffff8;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+.col-2 p {
+  margin-top: 20px;
+  color: hsl(204, 43%, 93%);
+  line-height: 25px;
+  font-size: 16px;
+  padding-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 35px;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    max-width: 400px;
+    min-height: 100vh;
+    margin: auto;
+  }
+  .card {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-1 {
+    border-radius: 0;
+  }
+  .yellow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .price p {
+    font-size: 50px;
+  }
+  .wrapper {
+    margin-top: 20px;
+  }
+  .col-2 {
+    border-radius: 0 0 7px 7px;
+  }
+  button {
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+}
